@@ -10,8 +10,11 @@
 	
 </head>
 
-<body>
-	<h1>{{ "hello" + "world" }} </h1>	
+<body ng-controller = "StoreController as store">
+	<h1> {{ store.product.name }} </h1>	
+	<p> {{ store.product.price}}<BR>
+		{{ store.product.description }}
+	 </p>
 </body>
 
 </html>

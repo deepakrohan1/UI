@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+	<link rel="stylesheet" href="style.css" />
+	<script src="angular.min.js"></script>
+	<script src="script.js"></script>
+	
+</head>
+
+<body ng-controller="GreetingController">
+
+	<div>{{ 4+3 }}</div>
+	<div>
+		<h1>{{ greeting }}</h1>
+		<br/>
+
+			Message: {{ error }} <br/>
+		Name: {{user.login}} <BR>
+		<img ng-src="{{user.avatar_url}}">
+	</div>
+</body>
+
+</html>

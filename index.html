@@ -29,6 +29,14 @@
 			</div>
 
 		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col3">
+				<h4>Column3</h4>
+			</div>
+			<div class="col-xs-12 col-sm-6 col4">
+				<h4>Column4</h4>
+				</div>
+		</div>
 	</div>
 	<div ng-repeat="product in store.products | orderBy:'-price'"> <!-- Using {{ filters:options }} here orderBy is used -->
 		<h1> {{ product.name }} </h1>	

@@ -1,4 +1,4 @@
-.col1{
+/*.col1{
 	background: blue;
 }
 .col2{
@@ -9,7 +9,11 @@
 }
 .col4{
 	background: yellow;
-}
+}*/
 .subHead{
 	text-align: center;
 }
+.p, h5{
+	text-align: center;
+}
+

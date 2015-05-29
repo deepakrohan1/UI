@@ -27,47 +27,50 @@
 		</div>
 		<hr/>
 		<div class="row">
-			<div class="col-md-4 col2"> <!-- For small devices it's 6 boxes for extra small boxes its 12 boxes-->
+			<div class="col-md-4 col-sm-6 col-xs-12 col2"> <!-- For small devices it's 6 boxes for extra small boxes its 12 boxes-->
 				<h1 class="subHead">Column1</h1>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 			</div>
 
-			<div class="col-md-4 col3"> <!-- For small devices it's 6 boxes for extra small boxes its 12 boxes-->
+			<div class="col-md-4 col-sm-6 col-xs-12 col2"> <!-- For small devices it's 6 boxes for extra small boxes its 12 boxes-->
 				<h1 class="subHead">Column2</h1>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 			</div>
 
-			<div class="col-md-4 col4"> <!-- For small devices it's 6 boxes for extra small boxes its 12 boxes-->
+			<div class="col-md-4 col-sm-6 col-xs-12 col2"> <!-- For small devices it's 6 boxes for extra small boxes its 12 boxes-->
 				<h1 class="subHead">Column3</h1>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 			</div>
 
-		</div>
-		<div class="row">
-			<div class="col-md-4  col3">
+		
+			<div class="col-md-4 col-sm-6 col-xs-12 col2">
 				<h1 class="subHead">Column4</h1>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+				<h2>Trying the Nesting here</h2>
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<h5>Sub-Col1</h5>
+						<p>Here you go its a sample</p>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+							<h5>Sub-Col1</h5>
+						<p>Here you go its a sample</p>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-4 col2">
+			<div class="col-md-4 col-sm-6 col-xs-12 col2">
 				<h1 class="subHead">Column5</h1>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 			</div>
-			<div class="col-md-4 col4">
+			<div class="col-md-4 col-sm-6 col-xs-12 col2">
 				<h1 class="subHead">Column6</h1>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 			</div>
 
 		</div>
-	</div>
-	<div ng-repeat="product in store.products | orderBy:'-price'"> <!-- Using {{ filters:options }} here orderBy is used -->
-		<h1> {{ product.name }} </h1>	
-		<p> 
-			Price: {{ product.price | currency }}<BR> <!-- Adding the filter to add currency decimal points and currency $ -->
-			Description: {{ product.description }} <BR>
-			<img ng-src="{{product.images.image1}}">
-			<button ng-hide="product.soldOut">Add to Cart</button> <!-- Hiding the products based on the availability -->
-		</p>
-	</div>
+	
+	
 	
 </body>
 
